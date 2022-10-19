@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body{
+    background-color: lightblue;
+    margin-left: 5%;
+}
+
+a {
+    color: rgb(82, 71, 71);
+    text-decoration: none;
+}
+
+p {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.hide{
+    box-shadow :0 0 1px 0 rgb(56 64 79 / 30%), 0 2px 5px 0 rgb(9 24 54 / 30%), 0 2px 5px 0 rgb(9 24 54 / 30%);
+    background-color: rgba(255,255,255,0.8);
+    text-align: left;
+    border-radius: 5px;
+    position: absolute;
+    width: 200px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.3px;
+}
+
+/* .image-resize{
+    object-fit: cover;
+    height: 65px;
+    width: 200px;
+} */
+
+.curugluhur-txt{
+    left: 300px;
+    top: 670px;
+}
+
+.pantaicimaja-txt{
+    left: 60px;
+    top: 885px;
+}
+
+.pulaukunti-txt{
+    top: 620px;
+    left: 135px;
+}
+
+.bukithabibie-txt{
+    top: 275px;
+    left: 70px;
+}
+
+.marker-curugluhur{
+    transition: 0.5s;
+}
+.marker-pulaukunti{
+    transition: 0.5s;
+}
+.marker-pantaicimaja{
+    transition: 0.5s;
+}
+.marker-bukithabibie{
+    transition: 0.5s;
+}
+.marker-luhur:hover{
+    rx: 8;
+    ry: 10.5;
+}
+.marker-kunti:hover{
+    rx: 8;
+    ry: 10.5;
+}
+.marker-cimaja:hover{
+    rx: 8;
+    ry: 10.5;
+}
+.marker-habibie:hover{
+    rx: 8;
+    ry: 10.5;
+}
+
+.mapdiv path{
+    stroke: black;
+}
+
+h{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+p{
+    font-size: 10px;
+}
+
+.border-rd {
+    border-radius: 3px;
+}
+
+.border-rd-top {
+    border-radius: 3px 3px 0 0;
+}
+
+.border-rd-left {
+    border-radius: 3px 0 0 3px;
+}
+
+.mbox {
+    margin-top: 4px;
+    margin-left: 8px;
+    margin-bottom: 4px;
+}
+
+.image-resize{
+    object-fit: cover;
+    height: 65px;
+    width: 200px;
+}
+
+.image-resize2{
+    object-fit: cover;
+    height: 70px;
+    width: 70px;
+    margin-right: 8px;
+}
+
+.navbar{
+    position: absolute;
+    right: 0px;
+    width: 260px;
+    height: 100%;
+    text-align: left;
+    transition: 0.5s ease;
+}
+
+.side-nav{
+    position: fixed;
+    right: 0px;
+    width: 260px;
+    height: 100%;
+    transition: 0.5s ease;
+    overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: grey;
+}
+
+.navbar > .side-nav {
+    list-style-type: none;
+    padding: 0%;
+    margin: 0%;
+}
+
+.nav-item{
+    display: flex;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 3px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+}
+
+.nav-item > .nav-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(82, 71, 71);
+    /* padding: 0.5em; */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: -0.3px;
+    flex: 1;
+    box-shadow :0 0 1px 0 rgb(56 64 79 / 30%), 0 2px 5px 0 rgb(9 24 54 / 30%), 0 2px 5px 0 rgb(9 24 54 / 30%);
+}
+
+.subtitle {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: -0.3px;
+    color: #848484;
+}
+
+.nav-item > .nav-link:hover{
+    background-color: rgba(255,255,255,1);  
+    border-radius:3px;
+    /* margin-bottom: 4px;
+    margin-right: 4px; */
+}
+
+.toggle-collapse{
+    float: left;
+    margin-left: -3.3em;
+    margin-top: .5em;
+    content: "";
+    outline: inherit;
+    border: 0px;
+    background: transparent;
+}
+
+.toggle-icon, .toggle-icon::before, .toggle-icon::after{
+    content: "";
+    width: 30px;
+    height: 3px;
+    position: fixed;
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 2em;
+    border: 1px solid rgba(255,255,255,0.8);
+    cursor: pointer;
+    transition: 0.5s ease;
+    margin-top: 0.8em;
+}
+
+.toggle-icon::before{
+    position: absolute;
+    left: -1px;
+    margin-top: -0.8em;
+}
+
+.toggle-icon::after{
+    position: absolute;
+    left: -1px;
+    margin-top: 0.6em;
+    width: 20px;
+}
+
+.toggle-icon{
+    width: 15px;
+}
+
+.show .toggle-icon::after{
+    width: 30px;
+}
+
+.show .toggle-icon{
+    width: 30px;
+}
+
+.content-curug-luhur {
+    height: 65px;
+    width: 200px;
+
+    background-image: url(images/curugluhur1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    animation: slide-curug-luhur 12s infinite;
+    transition: 600ms;
+}
+@keyframes slide-curug-luhur{
+    33% {
+        background-image: url(images/curugluhur2.jpg);
+    }
+    66% {
+        background-image: url(images/curugluhur3.jpeg);
+    }
+    100% {
+        background-image: url(images/curugluhur1.jpg);
+    }
+}
+
+.content-bukit-habibie {
+    height: 65px;
+    width: 200px;
+
+    background-image: url(images/bukithabibie1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    animation: slide-bukit-luhur 12s infinite;
+    transition: 600ms;
+}
+@keyframes slide-bukit-luhur{
+    33% {
+        background-image: url(images/bukithabibie2.jpg);
+    }
+    66% {
+        background-image: url(images/bukithabibie3.jpg);
+    }
+    100% {
+        background-image: url(images/bukithabibie1.jpg);
+    }
+}
+
+.content-pulau-kunti {
+    height: 65px;
+    width: 200px;
+
+    background-image: url(images/pulaukunti1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    animation: slide-pulau-kunti 12s infinite;
+    transition: 600ms;
+}
+@keyframes slide-pulau-kunti{
+    33% {
+        background-image: url(images/pulaukunti2.jpg);
+    }
+    66% {
+        background-image: url(images/pulaukunti3.jpg);
+    }
+    100% {
+        background-image: url(images/pulaukunti1.jpg);
+    }
+}
+
+.content-pantai-cimaja {
+    height: 65px;
+    width: 200px;
+
+    background-image: url(images/pantaicimaja1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+    animation: slide-pantai-cimaja 12s infinite;
+    transition: 600ms;
+}
+@keyframes slide-pantai-cimaja{
+    33% {
+        background-image: url(images/pantaicimaja2.jpg);
+    }
+    66% {
+        background-image: url(images/pantaicimaja3.jpg);
+    }
+    100% {
+        background-image: url(images/pantaicimaja1.jpg);
+    }
+}
+
+
+/* .nav-item:last-child > .nav-link i{
+    padding: .5em;
+}
+
+.nav-item:hover:last-child > .nav-link{
+    background-color: white;
+    color: black;
+} */
+
